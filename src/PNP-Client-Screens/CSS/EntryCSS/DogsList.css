@@ -1,0 +1,87 @@
+.pet-head-list-item {
+  min-height: 70px;
+  min-width: 80px;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+}
+.pet-wl-list-img {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 10px;
+  background-color: #f5f5f5;
+  border: 2px solid #f6c39b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.pet-head-list-item img {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.pet-head-list-item input {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  right: 1px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1111;
+}
+.pet-head-list-item .checkmark {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ee8838;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 3px #fff;
+}
+.pet-head-list-item .checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}  
+.pet-head-list-item input:checked ~ .checkmark{
+  background-color: #ee8838;
+}
+.pet-head-list-item input:checked ~ .checkmark:after{
+  display: block;
+}
+.pet-head-list-item .checkmark:after {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 2px;
+  width: 2px;
+  height: 7px;
+  padding: 1px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.pet-head-list-item p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #343434;
+ }
+ .pet-wl-list-img2 {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.pet-wl-list-img2 img {
+  width: 30px;
+  display: block;
+  margin: 0 auto;
+}

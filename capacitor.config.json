@@ -1,0 +1,6 @@
+{
+  "appId": "com.finalpnpclient.app",
+  "appName": "final-pnp-client-app",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

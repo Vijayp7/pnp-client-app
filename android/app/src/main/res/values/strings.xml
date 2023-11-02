@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PF Client</string>
+    <string name="title_activity_main">PF Client</string>
+    <string name="package_name">com.finalpnpclient.app</string>
+    <string name="custom_url_scheme">com.finalpnpclient.app</string>
+</resources>

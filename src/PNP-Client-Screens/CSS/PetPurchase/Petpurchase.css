@@ -1,0 +1,97 @@
+.pet-prchs{
+    padding: 42px 16px 0;
+  }
+  .pet-prchs-hd{
+    padding: 0 16px 14px;
+    border-bottom: 2px solid #e7e7e7;
+    margin: 0 -16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .pet-prchs-hd-left{
+    flex: 0 0 10px;
+    max-width: 10px;
+    position: absolute;
+    left: 16px;
+  }
+  .pet-prchs-hd h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: #2b3440;
+    width: 100%;
+    text-align: center;
+  }
+  .pet-prchs-hd p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f4a261;
+    position: absolute;
+    right: 16px;
+  }
+  
+  .pet-prchs-main{
+    padding: 34px 0;
+  }
+  .pet-prchs-main h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  .pet-prchs-main select,
+  .pet-prchs-main select.pt-slct {
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+      outline: none;
+      background: #fff;
+      border: 2px solid #f6c39b;
+      border-radius: 10px;
+      min-height: 56px;
+      color: #515151;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 0 0 0 55px;
+      background-image: url(../../../../public/gender-icon.png), url(../../../../public/dropdown-o-icon.png);
+      background-repeat: no-repeat;
+      /* background-size: 30px; */
+      background-position: left 15px center,right 14px center;
+      appearance: none;
+      margin-bottom: 20px;
+  }
+  .pet-prchs-main select.pt-slct{
+    background-image: url(../../../../public/pet-type-icon.png), url(../../../../public/dropdown-o-icon.png);
+  }
+  
+  .pet-prchs-main select.brd-slct,
+  .pet-prchs-main select.bq-slct{
+    background: #f5f5f5;
+    background-image:url(../../../../public/dropdown-o-icon.png);
+    background-repeat: no-repeat;
+    background-position:right 14px center;
+    border: none;
+    padding: 0 15px;
+  }
+  .select-items{
+    padding-bottom: 60px;
+  }
+  .pet-prchs-btn button{
+      width: 100%;
+      margin: 0 auto;
+      background-color: #ee8838;
+      border-radius: 40px;
+      padding: 15px 0;
+      outline: none;
+      border: none;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      cursor: pointer;
+  }
+  
+  

@@ -1,0 +1,724 @@
+/*dog booking page css styling*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      contain: content;
+      height:100%;
+      min-height: 100vh;
+  }
+  /*font-family: 'Poppins', sans-serif;*/
+  /*font-family: 'Titan One', cursive;*/
+  
+  .header_section.header_section {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 24px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #ffff;
+    z-index: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .parent_head {
+      display: flex;
+      align-items: center;
+  }
+  .booking_text h3 {
+      color: #2b3440;
+      font:600 18px 'Poppins';
+      margin: 0;
+      font-size: 20px;
+  }
+  .pet-main-info{
+      padding:20px;
+  }
+  /* .pet_info {
+      padding: 28px 0px;
+  } */
+  h3 {
+    font: 500 18px 'Poppins';
+    /* margin: 10px 0 0px; */
+  }
+  /* .dog_section {
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+  .dog_img {
+      background-color: #f5f5f5;
+      height: 62px;
+      width: 63px;
+      border: 2px solid #f6c39b;
+      border-radius: 12px;
+  }
+  .dog_img img {
+      padding: 5px 10px;
+  }
+  .zoro_text img {
+      position: absolute;
+      bottom: 45px;
+      left: 40px;
+  }
+  .plus_img {
+      background-color: #f5f5f5;
+      height: 62px;
+      width: 63px;
+      border-radius: 8px;
+      margin-left: 20px;
+  }
+  .plus_img img {
+      padding-left: 20px;
+  }
+  .zoro_text {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .dog_img span {
+      font:500 15px'Poppins';
+  } */
+  .logo_booking {
+    position: absolute;
+    left: 24px;
+  }
+  .select h3 {
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin: 0 0 15px 0;
+  }
+  .select {
+      /* margin-top: 25px; */
+  }
+  .parent_section {
+      position: relative;
+  }
+  .packages {
+      background-image: url(../../../../public/bg3.png);
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      background-size: cover;
+      box-shadow: 0px 0 15px #ccc;
+      position: relative;
+      /* height: 980px; */
+  }
+  /* .popular_txt {
+      background-image: url(../../../../public/Rectangle-arrow.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 20px;
+      left:0px;
+      width:100%;
+      padding-left: 14px;
+      margin-bottom:16px;
+  } */
+  .popular_txt {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAAiCAYAAAC+wezsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2N2E1M2MwZS1jNjI2LWFjNDUtOWVmZS0yMDVhZDcyNzM2Y2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjMwMjQzQTY5QzdFMTFFRDhFRDhGQTE1OTBFOUNDOEEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjMwMjQzQTU5QzdFMTFFRDhFRDhGQTE1OTBFOUNDOEEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpkZmZkYjU3Zi03MDg2LWE3NGItODE0MS00YWUyY2ZjMzlmYWEiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo1NWQ3MWZlYy00MGYyLWI4NGMtOTg2Mi1mMjEyYzdjMmQxNWIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz76dfwgAAACHElEQVR42uzaPUgbYRwG8Is1hnZxcnEUo01Qil1FUmtswKmD4lTEDkKgaFuaBklLxIKgiINLRUU5JWgqflAqgorExHz0CwqxpEaNZutSCg6BYEn8nxr6IqYmHbz3heeBh1z+3HvD++OSwEWT+t2SlhCR4jDI1r5C7INQsRPagHIAOHFiI7TBzBvACZC1eJm702P5RYft56OvgOM76dV42WyXx7LGzL5Qw4DjGG3lsHzm+WbjOjP7TN3GRyXHaMsHetcLr3mDmX2ifsd3HMdoH2L6aZvP7MmGBjgO0d7HKqbsvoZNZhaiRi6eCDiO0Jb2K+XurfteZhak/rjsZMDxICZJqcW927LDX+/LBQ1wnKDN7xomXwfu+ZlxgLrzr3WAUxltLmqccAZNAWasAEavWgs4FdHeRY3jPUFT6O/oFG03l/WAUwltdqdqrDdU95FB26Lu5XoNwKmQo6Tu52i45huDpvwo2c/nGgXYxutPsS5ZOtO0+KzkZkL7P2hKNHiQql4Sf7T+W4XHDwyyNZHvWtxxKobQaullIdL2Vgc48WI5xysCnHhporrzwQMcP3lIdRHeDcCJl+Zc8QDHX1qpk1fhAY7PPKKOEp4GcOLlMXUkGx7g+E4HdfgyPMDxnyfUIcCJmad01/UDTsy8JLw3gBMzrwjPqRwoz+M0Btnajj0RImHp7C/oUgGhYTvESTX1buaOQ8TKHWrqRIABAJFmpwAvMJpLAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 110px;
+    padding-right: 7px;
+    margin-bottom: 0;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grooming.text {
+      text-align: center;
+      position: absolute;
+      left:0px;right:0px;
+      top:65px;
+  }
+  .grooming.text h2 {
+    color: #fff;
+    font-family: 'Titan One', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+  
+  .start_from {
+      background-color: #5fc2ed;
+      width: 108px;
+      height: 108px;
+      border-radius: 100%;
+      position: absolute;
+      top: 18%;
+      left: 63%;
+      border: 2px dashed #3798C2;
+      outline: 5px solid #e4f5fc;
+      color: #fff;
+      font-family: 'Titan One', cursive;
+      font-weight: 600 ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .start_from h3 {
+    padding: 0;
+    text-align: center;
+    font: 400 18px 'Titan One';
+    margin: 0;
+  }
+  .start_from strong {
+      font-size: 20px;
+      display: block;
+  }
+  
+  .parent_general {
+      /* position: absolute;
+      top:200px;
+      left:28px; */
+      display: flex;
+      justify-content: space-between;
+      padding: 230px 24px 0 24px;
+  }
+  .general h3 {
+    color: #5fc2ed;
+    font: 500 20px 'Titan One';
+  }
+  .cleaning_process {
+      padding-top: 20px;
+      /* margin-left: -15px; */
+      display: flex;
+      align-items: center;
+  }
+  .cleaning_process i.fa-solid.fa-check {
+      color: #5fc2ed;
+  }
+  .cleaning_process span {
+      padding-left: 14px;
+  }
+  .girl_img {
+      margin-top: 65px;
+      /* margin-left: 34px; */
+      width: 172px;
+      height: 231px;
+  }
+  .cleaning_process span {
+      padding-left: 13px;
+      color: #363636;
+      font:600 14px 'Poppins';
+  }
+  
+  .parent_add {
+      /* position: absolute;
+      top:496px;
+      left:20px; */
+      margin: 5px 24px 0;
+  }
+  .extra h3 {
+    color: #5fc2ed;
+    font: 400 20px 'Titan One';
+   }
+   .hair_cut {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .hair_cut label {
+      padding-left: 10px;
+      font:600 14px 'Poppins';
+  }
+  .hair_cut input {
+    width: 15px;
+    height: 15px;
+  }
+  .cut_process {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 13px;
+    margin-top: 12px;
+    padding-right: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cut_list-item {
+      border: 2px solid #afe0f6;
+      flex: 0 0 32%;
+      max-width: 32%;
+      height: 30px;
+      text-align: center;
+      padding: 4px;
+      border-radius: 6px;
+      font:600 13px 'Poppins';
+      /* margin: 0 5px 5px 0; */
+  }
+  .cut_list-item.active {
+      background-color: #5fc2ed;
+      color: #fff;
+  }
+  .list_item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 14px;
+  }
+  .cleaning {
+      padding: 10px;
+      color: #282828;
+      border: 1px solid #5fc2ed;
+      border-radius: 4px;
+      margin: 0px 10px 10px 0px;
+      font:600 14px 'Poppins';
+  }
+  .cleaning.active {
+      background-color: #5fc2ed;
+      color: #fff;
+  }
+  .button_class {
+      text-align: center;
+      padding: 15px 0;
+  }
+  .button_class button.btn {
+      width: 240px;
+      /* position: absolute;
+      bottom: 10px;
+      left: 0px;
+      right: 0px; */
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: relative;
+  }
+  .button_class button.btn span {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 24%;
+    margin-right: 22px;
+  }
+  .button_class button.btn.active  span {
+    display: block;
+  }
+  .service_data {
+      margin: 24px 0;
+  }
+  .pet-age-input {
+      margin-top: 10px;
+      position: relative;
+    }
+  .service_data h3 {
+      color: #343434;
+      font:600px 16px 'Poppins' !important;
+  }
+  .pet-age-input input[type="date"],.pet-age-input input.vacc[type="date"] {
+      /* width: 100%; */
+      height: 50px !important;
+      outline: none;
+      border-radius: 8px;
+      border: none;
+      background-color: #f5f5f5 !important;
+      padding: 0 18px;
+      font:400 14px 'Poppins';
+      background-color: #f5f5f5 !important;
+      background-image: url(../../../../public/calendar.png);
+      background-repeat: no-repeat;
+      background-position: right 18px center;
+      background-size: 24px;
+      appearance: none;
+  }
+  .pet-age-input input.vacc[type="date"]{
+    position: relative;
+  }
+  .pet-age-input  input[type="date"]::-webkit-calendar-picker-indicator,
+  .pet-age-input input[type="date"]::-webkit-calendar-picker-indicator,
+  .pet-age-input  input.vacc[type="date"]::-webkit-calendar-picker-indicator {
+    opacity:0;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    top: 13%;
+  }
+  .pet-age-input  input[type="date"]::-ms-clear,
+  .pet-age-input input[type="date"]::-ms-clear,
+  .pet-age-input  input.vacc[type="date"]::-ms-clear
+  {
+    -webkit-appearance: none;
+    opacity: 0;
+    display: none;
+  }
+  ptcs-datepicker::part(date-field-clear-button):not(.dummy):not(.dummy):not(.dummy):not(.dummy):not(.dummy) {
+    visibility: hidden;
+  }
+  .pet-age-input button.ui-datepicker-current { 
+    display: none !important; 
+  }
+  .mbsc-range-label-clear {
+    display: none;
+  }
+  input[type="date"]::-webkit-clear-button {
+      display: none;
+  }
+
+  input[type="date"]::-ms-clear {
+      display: none;
+  }
+
+  input::-ms-clear {
+      width: 0;
+      height: 0;
+  }
+  .pet-age-input  input.vacc[type="date"]::-webkit-calendar-picker-indicator{
+    top: 20%;
+  }
+  .pet-age-input input[type="date"]::placeholder{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+  }
+  .perferable_time h3 {
+    font: 500 18px 'Poppins';
+    color: #343434;
+    margin-bottom: 10px;
+  }
+  .timer input[type="time"] {
+      width: 100%;
+      height: 50px !important;
+      outline: none;
+      border-radius: 8px;
+      border: none;
+      background-color: #f5f5f5 !important;
+      padding: 0 18px;
+      font:400 14px 'Poppins';
+      margin-bottom: 30px;
+      background-image: url(../../../../public/clock-up.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: right 18px center;
+      appearance: none;
+  }
+  .timer input[type="time"]::-webkit-calendar-picker-indicator {
+        opacity:0;
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        z-index: 999999;
+        right: 10px;
+        top: 13%;
+    }
+  .timer {
+     margin-top: 15px;
+     position: relative;
+    }
+  button.btn {
+      width: 375px;
+      background-color: #ee8838;
+      border: none;
+      border-radius: 26px;
+      height: 52px;
+      color: #fff;
+      font:400 16px 'Poppins';
+  }
+  .button_class button.btn{
+    background-color: #ccc;
+    color: #4a4406;
+  }
+  .button_class button.btn.active {
+    background-color: #ee8838;
+    color: #fff;
+  }
+  .btn_proceed {
+        text-align: center;
+  }
+  .hair_cut .chk-items {
+    /* position: absolute; */
+    top: -10px;
+    right: -7px;
+  }
+  .hair_cut .chk-items input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  .hair_cut .chk-items label {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    color: #656668;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  .hair_cut .chk-items label:before {
+    content: '';
+    background-color: #fff;
+    border: 2px solid #5fc2ed;
+    border-radius: 5px;
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    /* margin-right: 15px; */
+    /* border-radius: 50%; */
+  }
+  .hair_cut .chk-items input:checked + label:before {
+    border: 2px solid #5fc2ed;
+    border: 2px solid #5fc2ed;
+  }
+  .hair_cut .chk-items input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 4px;
+    height: 8px;
+    border: solid #5fc2ed;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .time-main {
+    border-radius: 12px;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+  }
+
+  .g-time-radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 36px;
+  }
+  .time-lft{
+    display: flex;
+    align-items: center;
+  }
+
+  .g-time-radio label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #7e7d7d;
+    margin-left: 7px;
+  }
+  .g-time-radio select {
+    background: #f7f7f7;
+    border-radius: 40px;
+    border: 2px solid #ee8838;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #393939;
+    text-align: center;
+    display: block;
+    padding: 5px 5px;
+    min-width: 100px;
+    outline: none;
+  }
+
+  .time-lft .chk-items {
+    /* position: absolute; */
+    top: -10px;
+    right: -7px;
+  }
+  .time-lft .chk-items input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  .time-lft .chk-items label {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    color: #656668;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  .time-lft .chk-items label:before {
+    content: '';
+    background-color: #fff;
+    border: 2px solid #ee8838;
+    border-radius: 50%;
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    /* margin-right: 15px; */
+    /* border-radius: 50%; */
+  }
+  .time-lft .chk-items input:checked + label:before {
+    border:2px solid #ee8838;
+    border: 2px solid #ee8838;
+  }
+  .time-lft .chk-items input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 4px;
+    height: 8px;
+    border: solid #ee8838;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+
+
+  /*dog booking css styling ended*/
+  
+   /*dog booking styles starts*/
+   @media (max-width:413px){
+      body {
+      width: 100%;
+      }
+    .packages {
+      /* height: 990px; */
+    }
+    .start_from {
+      width: 95px;
+      height: 95px;
+    }
+    .cleaning_process {
+      margin-left: 0;
+     }
+    h3 {
+      /* font-size: 12px !important; */
+    }
+    .girl_img {
+      width: 140px;
+      height: auto;
+      margin-left: auto;
+  }
+    .parent_general {
+      /* left: 20px; */
+    }
+     .cleaning_process span {
+      padding-left: 4px;
+    }
+    .grooming.text h2 {
+      font-size: 17px;
+     }
+     .general h3 {
+      font-size: 18px !important;
+     }
+   .cleaning_process span {
+      font-size: 12px !important;
+    }
+     .extra h3 {
+      font-size: 18px !important;
+     }
+     .cut_list-item {
+      width: 78px;
+    }
+     .cut_list-item,.cleaning {
+      font-size: 12px;
+     }
+     .button_class button.btn {
+      width: 220px;
+      font-size: 15px;
+     }
+     .clouds_img {
+      margin-top: -80px;
+     }
+     .circle {
+      width: 90px;
+      height: 90px;
+    }
+   .traning_img img {
+      width: 130px;
+    }
+     .pet-age-input input {
+      font-size: 14px;
+     }
+    button.btn {
+      width: 280px;
+      font-size: 14px;
+    }
+     .perferable_time h3,.service_data h3 {
+      font-size: 15px;
+     }
+     .select h3 {
+        margin: 0 0 12px 0;
+        font-size: 16px;
+    }
+    .pet-main-info {
+        padding: 20px 14px;
+    }
+    .body_class {
+        /* padding: 20px 16px; */
+        /* margin-top: 30px; */
+    }
+  }
+   /*dog booking styles ends*/
+
+@media (min-width:600px) and (max-width:768px){
+  .parent_general {
+    display: flex;
+    justify-content: center;
+    padding: 280px 24px 0 35px;
+  }
+}
+
+@media (min-width:500px) and (max-width:599px){
+  .parent_general {
+    justify-content: center;
+    padding: 240px 24px 0 35px;
+  }
+}
+
+@media (max-width:374px){
+  .parent_add {
+    margin: 0 24px 0;
+  }
+  .header_section.header_section {
+    height: 70px;
+    padding: 0 16px;
+  }
+  .logo_booking {
+    left: 16px;
+  }
+  .booking_text h3 {
+      font-size:16px;
+  }
+  .traning-step3 {
+    bottom: -110px;
+  }
+  h3 {
+    font: 500 16px 'Poppins';
+  }
+  .pet_text h3 {
+    margin-bottom: 7px;
+  }
+  .time-main {
+    padding: 12px 14px;
+  }
+}

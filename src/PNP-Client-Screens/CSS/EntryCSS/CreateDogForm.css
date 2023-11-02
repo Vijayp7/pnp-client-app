@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  contain: content;
+  width:100%;
+  height:100%;
+  min-height:100vh;
+}
+
+
+.mr-b{
+/* margin-bottom:30px; */
+}
+.m-b{
+margin-bottom:10px;
+}
+.m-r{
+margin-right:20px;
+}
+.h5{
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 17px;
+color:#131313;
+line-height: 36px;
+margin-bottom: 5px;
+}
+
+.pet-gender.hp{
+  padding: 0 20px;
+}
+.typeof-pet-list.mr-b {
+  padding: 5px 20px;
+}
+
+.pet-det-head{
+height:80px;
+border-bottom:1px solid #e7e7e7;
+text-align: center;
+padding-top:30px;
+padding-bottom: 15px;
+position: sticky;
+width: 100%;
+top: 0;
+z-index: 11111;
+background-color: #fff;
+}
+.bk-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  position: absolute;
+  top: 34%;
+  left: 17px;
+}
+.pet-det-head h4{
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 21px;
+color:#2b3440;
+/* line-height: 33px; */
+}
+.typeof-pet{
+padding:0px 20px;
+min-height:800px;
+}
+/*type of per styling*/
+.typeof-pet-text{
+display:flex;
+justify-content: space-between;
+}
+.typeof-pet-text span{
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 14px;
+color:#f4a261;
+line-height: 36px;
+}
+.pet-imglist{
+display: flex;
+/* align-items: center; */
+}
+.pet-img-item {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 20px 10px;
+  position: relative;
+}
+.pet-img-item p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #515151;
+  line-height: 1;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.pet-img-item img{
+display: inline-block;
+margin:0 auto;
+width: 58px;
+margin-bottom: 7px;
+}
+.pet-name-input input{
+width:100%;
+height:50px;
+outline: none;
+border:1px solid #f6c39b;
+border-radius:10px;
+color:#515151;
+padding-left:20px;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+background-color:#f5f5f5 !important;
+}
+.pet-gender-list{
+display: flex;
+justify-content: space-between;
+}
+.pet-gender-list img{
+display: inline-block;
+width:22px;
+}
+.pet-gender-list .list-item{
+border: 1px solid #f6c39b;
+flex: 0 0 48%;
+max-width: 48%;
+height:50px;
+display: flex;
+align-items: center;
+padding-right:0;
+justify-content: center;
+border-radius:10px;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+background-color: #f5f5f5;
+font-size: 16px;
+margin: 0 0 0 0;
+color:#515151;
+}
+.pet-gender-list .active{
+background-color: #ee8838;
+color: #fff;
+}
+.pet-gender-list .icon-o {
+  display: block;
+  margin-right: 14px;
+}
+.pet-gender-list .icon-w{
+  display: none;
+}
+.pet-gender-list .active .icon-w{
+  display: block;
+  margin-right: 14px;
+}
+.pet-gender-list .active .icon-o{
+  display: none;
+}
+.pet-age-img-list {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+/* margin-bottom: 30px; */
+}
+.pet-age-img-item {
+height: 120px;
+/* max-width: 100%; */
+/* flex: 0 0 calc(100% / 3 - 15px); */
+flex: 0 0 110px;
+max-width: 110px;
+text-align: center;
+display: block;
+/* padding: 15px; */
+background-color: #f5f5f5;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* margin-right: 10px; */
+flex-direction: column;
+}
+.pet-age-img-item img{
+display: inline-block;
+margin:0 auto;
+width:53px;
+}
+.pet-age-img-item p{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 16px;
+color:#515151;
+line-height:36px;
+}
+.pet-age-input input{
+width:100%;
+height:50px;
+outline: none;
+border-radius:10px;
+border:1px solid #f6c39b;
+background-color:#f5f5f5 !important;
+padding-left:60px;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+}
+.pet-age-input select{
+width:100%;
+height:50px;
+outline: none;
+border-radius:10px;
+border:1px solid #f6c39b;
+background-color:#f5f5f5 ;
+padding-left:20px;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+margin-bottom: 15px;
+appearance: none;
+background-image: url(../../../../public/down.png);
+background-repeat: no-repeat;
+background-position: right 18px center;
+background-size: 20px;
+}
+.calender {
+margin-bottom: 30px;
+background-image: url(../../../../public/calender.png);
+background-repeat: no-repeat;
+background-position: left 18px center;
+background-size: 26px;
+}
+.pet-agresion-list{
+display: flex;
+margin-bottom:15px;
+justify-content: space-between;
+}
+.agresion-list-item{
+width:100%;
+margin-right: 10px;
+height:50px;
+display: flex;
+background-color: #f5f5f5;
+align-items: center;
+justify-content: space-around;
+border-radius:15px;
+border:1px solid #f6c39b;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+color:#515151;
+}
+.agresion-list-item.active{
+background-color: #ee8838;
+color: #fff;
+}
+.submit-button{
+margin-bottom:100px;
+margin-top: 20px;
+}
+.submit-button button{
+width:100%;
+height:50px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-radius:25px;
+border:none;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 16px;
+color:#ffffff;
+background:#ee8838;
+}
+
+
+
+@media (max-width:413px){
+body{
+  width:100%;
+}
+.h5{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.pet-age-input {
+  margin-top: 7px;
+}
+.pet-det-head h4{
+  font-size: 19px;
+}
+.pet-list-img-text .pet-img{
+  width:35px;
+  height:35px;
+}
+.pet-gender-list .list-item,
+.agresion-list-item {
+  font-size:14px;
+}
+.pet-img-item img{
+  width:45px;
+}
+.pet-gender-list img {
+  width:19px;
+}
+.pet-age-img-item{
+  flex: 0 0 90px;
+  max-width: 90px;
+  height:96px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.pet-age-img-item img{
+  width:38px;
+}
+.pet-age-img-item p{
+  font-size: 13px;
+}
+.pet-details{
+  padding:15px;
+}
+.pet-det-list-item{
+  height:70px;
+}
+.pet-age-input .calender {
+  background-size: 20px;
+}
+} 

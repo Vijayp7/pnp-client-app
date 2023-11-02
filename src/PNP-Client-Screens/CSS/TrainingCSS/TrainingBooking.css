@@ -1,0 +1,822 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    contain: content;
+    width:100%;
+    height:100%;
+    min-height:100vh;
+  }
+
+
+  .pet-dog-train-head{
+    height: 80px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 20px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 1111;
+  }
+  .pet-dog-train-head .pet-training-head{
+    display:flex ;
+    align-items: center;
+  }
+  .pet-training-head img{
+    width:9px;
+    position: absolute;
+    left: 20px;
+  }
+  .pet-pr-my-pet {
+    margin-bottom: 20px;
+  }
+  .pet-pr-my-pet h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #2b3440;
+    margin-bottom: 10px;
+  }
+  .pet-pd-head-img {
+    display: flex;
+  }
+  .pet-head-list-item {
+    min-height: 70px;
+    min-width: 80px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+  } 
+  /* .pet-wl-list-img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 10px;
+    background-color: #f5f5f5;
+    border: 2px solid #f6c39b;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .pet-head-list-item img {
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+}
+  .pet-wl-list-img::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ee8838;
+    background-image: url(../../../../public/white-tick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 0px 3px #fff;
+  } */
+  .pet-head-list-item p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #343434;
+   }
+   .pet-wl-list-img2 {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .pet-wl-list-img2 img {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+  .pet-dog-train-head .pet-training-head{
+    display:flex ;
+    align-items: center;
+  }
+  .pet-training-head h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color:#2b3440;
+    text-align: center;
+    width:100%;
+    text-align: center;
+  }
+  
+  .pet-train-main{
+    padding:20px;
+  }
+  .pet-train-my-pet h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color:#2b3440;
+    margin-bottom: 10px;
+  }
+  .ptin-list-item img {
+    width: 73px;
+    height: 69px;
+  }
+  .pet-tin-head-img{
+    display: flex;
+  }
+  .ptin-list-item{
+    width:68px;
+    margin-right:20px;
+    text-align: center;
+  }
+  .ptin-list-item p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color:#343434;
+  }
+  
+  .pet-tin-package h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#2b3440;
+    margin-bottom: 10px;
+  }
+  .pet-tin-package .pet-trn-obedience {
+    /* min-height: 745px; */
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 3px 3px #f2f4f4; */
+    margin-bottom: 20px;
+    border: 1px solid #cccc;
+  }
+  .pet-tin-package .pet-trn-popular{
+    background-color: #9192ff;
+    height:175px;
+    position: relative;
+  }
+  .pet-trn-popular .pet-obd-pop-text {
+    background-image: url(../../../../public/popular-bd.png);
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 15px;
+    top: -15px;
+  }
+  .pet-trn-popular .pet-obd-pop-text {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABcCAYAAADu8aIfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2N2E1M2MwZS1jNjI2LWFjNDUtOWVmZS0yMDVhZDcyNzM2Y2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REE2NEZBQzVBMDlFMTFFREFBQ0FCRkIzREM5RUY4MTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REE2NEZBQzRBMDlFMTFFREFBQ0FCRkIzREM5RUY4MTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiMzFkODgyMC0zMGRhLTI5NDgtOTU2NC01OTMwNjc3MDk4MjYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo2MWYwNmIyMC00OTE1LWVkNGItYjQ3Ny03MjJmMDgyZmMyODYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4TUE6zAAAEZ0lEQVR42uzde0hTURwH8E0350x3Z2hpkyQpKgkqpTcSK1vlq5Cif6L/ekFREGHvgh4UEf0RvehF0cMiQlulls6ELCgyIknMsJZz05rpNnVzD9c5cRYXEfdwmo/vF37ci9u5ug/nnt+5+0fhMpVGgASe5yVKn94XAqrBiZDM6OlgGPhgRgMa0Aigh25Evf2w5P7Fz6AJPMvXbU3GjMbSAWgE0IBGAA1oQCOABjQCaEADGgE0oBFAAxrQCKABjQAa0IBGAA1oBNCABjQCaEAjgAY0oBFAAxoBNKABjQAa0AigAQ1oBNCARgANaEAjgAY0AmhAAxoBNKARQAMa0AigAY0AGtAjL6Lh8oe2d0hetrZJq+q+xb5vaIw2zkvVpo6PsaTIOWuWUOgOB3Q/YrWJq3R6ecG1O/OLP1QntPNfu/sotYEcCkgdOnXw8dKkxJZsWZRNBWgfY3eE1umbuAcvKqZqHqpnGXwZk3c0p4wcyhLi28J2b9NkTFS0roqQ2ucBukecrpDmRoP81sfqCa/P30irDfQ6OoPcvmN/Lp3lBZnpn2OzVNXpinjTWkmYc9qohXa7hZ06PXfp67fYqpPn0quCff2npcm/SN0jp/c2b3g9OXVmQ5oirm29SNQdPyqgTZbw4nptjHrP0exyP4e6SJnpJdi5jBRHKszbwMu3Fn4lB1o39mwvTZk86VdKwgTTFtJEI0YUdKc1rFKri1YfO6t6ZmyJdPoxtJtuOBhuB70ReK8ZWYUzcJkvn4fdPbSunjyoViYlGrO5KNuKYQtt6xJ/ajRwj0hDe6F5NeW3P6sKQ6Wz18Kw+/xVrJpJjWHoUb48I7C7qjxunDlv745S2kRzSBNdMOShHY7Q7/pmLr/y7aSKm/fnav3dzbGZa2ZLQyDpYCVk2BzDF/Y1qOmnzEGaaCE5LVy5pCYmZ8WndEWcaY1E4kweMtAuV8hvfZPsek1d3NszF5XVfg7v4q27jmD2WnZdWqG89VzqbWCRZrqRVD45zd+4/k3SnNk/PE1UMejQbrfAaTJL1TV1458cOb3yjb+7OR6ubRBaBL07WlmJeeu5xNvAK7cX1NMipzd5TXQTaaKRAwptaZdotLqx6l2HV5cE8GEtDLfzP25nHcFooif2P1ES9EzSRDOCBm21it81GOSFF66nFZEZbPXz9vXsGNp77BiGQgJuovuOZ/1totGcNe/w7qKMxIS/TXSR39BddlEteQx++KwsufRx8YzmABqSZ33sFgyP9GyidJZHemuirSapa+eBXDU5VS9bXDs2N/OjijTR3N7eG6z/0Gnj7RicgpERTxOl1e8Hm/7sOuy8pmYXjLz0bKKenYtkMKCdvGXBKhg9oU20hVU4b6aLgwndzXYMZtbURns8TfQnW1I8O5c+m2iIlx1DI6kvpPRA7v1rnOclSgMz0rEJ6fZlRnfylgYXHH0LwXYzZItqeXko7/E/gg/dxdsxOMDWb3Q6QdtoEfR/TZRC14NnwND/NdE/AgwADN+Sc/YGse0AAAAASUVORK5CYII=);
+    position: absolute;
+    width: 70px;
+    height: 75px;
+    left: 14px;
+    top: -10px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .pet-trn-popular .pet-obd-pop-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #2c2c2c;
+    line-height: 36px;
+    /* position: absolute; */
+    left: 17px;
+    top: 20px;
+    margin: 0 auto;
+  }
+  .pet-trn-popular .pet-obd-text-circle {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .pet-trn-popular .pet-obd-text-circle h4 {
+    font: 400 22px/28px 'Titan One';
+    color: #f5f5f5;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .pet-trn-popular .pet-obd-text-circle h4:after {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #8485f6;
+    border-radius: 50%;
+    top: -13px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  .pet-trn-popular .pet-trn-obd-cloud img {
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+  }
+  .pet-trn-obedience .pet-trn-session-list {
+    position: relative;
+    padding: 0px 20px 20px 20px;
+    /* min-height: 620px; */
+  }
+  .pet-trn-obedience .pet-trn-session-list .pet-trn-session {
+    position: absolute;
+    top: -100px;
+    height: 105px;
+    width: 105px;
+    right: 7px;
+  }
+  .pet-trn-session .pet-session-circle {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px dashed #9f4a06;
+    background-color: #ee8838;
+    box-shadow: 0px 0px 0px 5px #f8cdab;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pet-trn-session .pet-session-circle h6{
+    font:600 14px/17px  'Poppins';
+    color:#ffffff;
+    margin: 0;
+  }
+  .pet-trn-session .pet-session-circle h6 strong{
+    font:400 20px/30px 'Titan one';
+    color:#ffffff;
+  }
+  .pet-trn-session-list .pet-trn-list-boy-item {
+    position: relative;
+    /* min-height: 570px; */
+  }
+  .pet-trn-list-boy-item .pet-trn-list-item ul{
+    /* position: absolute;
+    top: 35px; */
+    /* display: flex; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+  .pet-trn-list-boy-item .pet-trn-list-item ul img {
+    width: 13px;
+    height: 9px;
+    margin-right: 10px;
+  }
+  .pet-trn-list-boy-item .pet-trn-list-item ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font: 500 14px/20px 'Poppins';
+    flex: 0 0 49%;
+    max-width: 49%;
+    margin-bottom: 10px;
+  }
+  .pet-trn-list-item {
+    margin-bottom: 80px;
+  }
+  .pet-trn-list-boy-item .pet-trn-boy-item {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+  }
+  .pet-trn-list-boy-item .pet-trn-boy-item img {
+    width: 180px;
+    display: block;
+ }
+  .pet-trn-list-boy-item .pet-trn-boy-item::after {
+    content: " ";
+    position: absolute;
+    background-image: url(../../../../public/yash-cloud-right.png);
+    height: 25px;
+    width: 61px;
+    right: -71px;
+    top: 30px;
+  }
+  .pet-trn-list-boy-item .pet-tyn-add-extra{
+    /* position: absolute;
+    bottom: -25px; */
+  }
+  .pet-trn-list-boy-item .pet-tyn-add-extra h4 {
+    position: relative;
+    font: 400 20px/36px 'Titan one';
+    color: #9192ff;
+    margin-bottom: 10px;
+  }
+  .pet-trn-list-boy-item .pet-tyn-add-extra h4::before {
+    content: " ";
+    position: absolute;
+    background-image: url(../../../../public/yash-cloud-left.png);
+    height: 25px;
+    width: 61px;
+    top: -34px;
+    left: -32px;
+  }
+  .pet-tyn-add-extra .pet-add-extra-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .pet-tyn-add-extra .pet-add-extra-list .pet-addex-list-item {
+    font: 500 13px/32px 'Poppins';
+    color: #282828;
+    border: 2px solid #c8c8ff;
+    border-radius: 5px;
+    padding: 0px 7px;
+    margin: 0 5px 5px 0;
+  }
+  .pet-tyn-add-extra .pet-add-extra-list .active{
+    background-color: #9192ff;
+    border: 2px solid #9192ff;
+    color:#ffffff;
+  }
+  .pet-tyn-add-extra .pet-trn-select{
+    text-align: center;
+  }
+  .pet-tyn-add-extra .pet-trn-select button {
+    height: 46px;
+    width: 92%;
+    border-radius: 25px;
+    border: none;
+    background-color: #ccc;
+    color: #4a4406;
+    outline: none;
+    font: 500 16px 'Poppins';
+    margin: 0 auto 10px;
+    /* box-shadow: 0px 14px 10px 2px #fbe3d0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .pet-tyn-add-extra .pet-trn-select button span {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 16px;
+    top: 20%;
+    margin-right: 22px;
+  }
+  .pet-tyn-add-extra .pet-trn-select button.active span {
+    display: block;
+  }
+  
+  .pet-trn-puppy .pet-trn-puppy-list {
+    min-height: 745px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 0px 0 15px #ccc; */
+    /* margin: 0 auto 30px; */
+    border: 1px solid #cccc;
+    margin: 0 8px 0 8px;
+  }
+  .pet-trn-puppy.mr-b {
+    padding-bottom: 40px;
+  }
+  .pet-trn-puppy-list .pet-trn-puppy-text {
+    background-color: #3cd1a2;
+    height: 175px;
+    position: relative;
+  }
+  .pet-trn-puppy-text .pet-trn-pyt-head h4{
+    font: 400 22px/28px 'Titan One';
+    color: #f5f5f5;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    letter-spacing: 1px;
+    left: 0px;
+    right: 0px;
+    width: 105px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pet-trn-puppy-text .pet-trn-pyt-head h4:after {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #34c396;
+    border-radius: 50%;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  .pet-trn-puppy-text .pet-trn-pyt-cloud img {
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+  }
+  .pet-trn-puppy-list  .pet-trn-pyp-sin-list {
+    /* min-height: 900px; */
+    padding: 20px;
+    position: relative;
+  }
+  .pet-trn-pyp-sin-list .pet-trn-pnp-session {
+    position: absolute;
+    top: -27px;
+    height: 105px;
+    width: 105px;
+    right: 7px;
+  }
+  .pet-trn-pnp-session .pet-pyp-circle {
+    position: absolute;
+    height: 90px;
+    width: 91px;
+    border-radius: 50%;
+    border: 1px dashed #9f4a06;
+    background-color: #ee8838;
+    box-shadow: 0px 0px 0px 5px #f8cdab;
+    text-align: center;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pet-trn-pnp-session .pet-pyp-circle h6 {
+    font: 600 13px/17px 'Poppins';
+    color: #ffffff;
+    margin: 0;
+  }
+  .pet-trn-pnp-session .pet-pyp-circle strong {
+    font: 400 18px/30px 'Titan one';
+    color: #ffffff;
+    margin: 0;
+  }
+  .pet-trn-pyp-sin-list .pet-pyp-list-item{
+    /* position: absolute;
+    top: 60px; */
+    margin-top: 60px;
+  }
+  .pet-trn-pyp-sin-list .pet-pyp-list-item ul {
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+  .pet-trn-pyp-sin-list .pet-pyp-list-item ul li {
+    list-style: none;
+    font: 500 14px/20px 'Poppins';
+    display: flex;
+    align-items: center;
+    flex: 0 0 calc(100% / 2);
+    margin-bottom: 8px;
+}
+  .pet-trn-pyp-sin-list .pet-pyp-list-item ul li img{
+    width: 13px;
+    height: 9px;
+    margin-right: 10px; 
+  }
+  .pet-trn-pyp-sin-list .pet-trn-gril-item {
+    /* position: absolute;
+    right: 0px;
+    top: 146px; */
+}
+  .pet-trn-pyp-sin-list .pet-trn-gril-item::after {
+    content: " ";
+    position: absolute;
+    background-image: url(../../../../public/yash-cloud-right.png);
+    height: 25px;
+    width: 61px;
+    right: -23px;
+    top: 50px;
+  }
+  .pet-trn-pyp-sin-list .pet-trn-gril-item img {
+    width: 180px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  .pet-trn-pyp-sin-list .pet-tyn-pyp-add-extra h4 {
+    position: relative;
+    font: 400 20px/36px 'Titan one';
+    color: #3cd1a2;
+    margin-bottom: 10px;
+  }
+  .pet-trn-pyp-sin-list .pet-tyn-pyp-add-extra {
+    /* position: absolute;
+    top: 40%;
+    left: 10px;
+    right: 10px; */
+  }
+  .pet-trn-pyp-sin-list .pet-tyn-pyp-add-extra h4{
+    font: 400 20px/36px 'Titan one';
+    color: #3cd1a2;
+    margin-bottom: 10px;
+  }
+  .pet-trn-pyp-sin-list .pet-tyn-pyp-add-extra h4::before {
+    content: " ";
+    position: absolute;
+    background-image: url(../../../../public/yash-cloud-left.png);
+    height: 25px;
+    width: 61px;
+    top: -48px;
+    left: -32px;
+  }
+  .pet-tyn-pyp-add-extra .pet-pyp-add-extra-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  .pet-pyp-add-extra{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .pet-pyp-add-extra-list .pet-pyp-addex-list-item {
+    font: 500 13px/32px 'Poppins';
+    color: #282828;
+    border: 2px solid #9de8d0;
+    border-radius: 5px;
+    padding: 0px 7px;
+    margin: 0 5px 5px 0px;
+  }
+  .pet-pyp-add-extra-list .pet-pyp-addex-list-item.active{
+    background-color: #3cd1a2;
+    border:2px solid #3cd1a2;
+    color:#ffffff;
+  }
+  .pet-tyn-pyp-add-extra .pet-pyp-trn-select{
+    text-align: center;
+  }
+  .pet-tyn-pyp-add-extra .pet-pyp-trn-select button {
+    height: 46px;
+    width: 92%;
+    border-radius: 25px;
+    border: none;
+    background-color: #ee8838;
+    color: #ffff;
+    outline: none;
+    font: 500 16px 'Poppins';
+    margin:0 auto;
+    /* box-shadow: 0px 14px 10px 2px #fbe3d0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .pet-tyn-pyp-add-extra .pet-pyp-trn-select button span {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    top: 20%;
+    margin-right: 22px;
+  }
+  .pet-tyn-pyp-add-extra .pet-pyp-trn-select button.active span {
+    display: block;
+  }
+  .pet-train-main .pet-trn-pyp-service h5{
+    font:500 16px 'Poppins';
+    color: #2b3440;
+    margin-bottom: 10px;
+  }
+  .pet-trn-pyp-service .pet-pyp-srv-date input[type="date"]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f5f5 !important;
+    padding:0 20px;
+    font:400 14px 'Poppins';
+    margin-bottom: 10px;
+    background-image: url(../../../../public/calender.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 24px;
+    appearance: none;
+  }
+  .pet-pyp-srv-date {
+      position: relative;
+  }
+  .pet-trn-pyp-service .pet-pyp-srv-date  input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity:0;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    top: 13%;
+  }
+  .pet-train-main .pet-trn-pyp-time h5{
+    font:500 16px 'Poppins';
+    color: #2b3440;
+    margin-bottom: 10px;
+  }
+  .pet-trn-pyp-time .pet-pyp-prf-time-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .pet-pyp-prf-time-list .pyp-prf-list-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    font:500 14px 'Poppins';
+    background-color: #f5f5f5;
+    color: #515151;
+    margin-right: 15px;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .pet-pyp-prf-time-list .pyp-prf-list-item.active{
+    background-color: #ee8838;
+    color: #ffffff;
+  }
+  .pet-pyp-prf-time-list .pyp-prf-list-item img{
+    height:30px;
+    width:30px;
+    display: block;
+    margin-right: 30px;
+  }
+  .pet-train-proceed-btn .pet-pyp-btn button{
+    height: 50px;
+    width:100%;
+    border-radius: 25px;
+    border: none;
+    background-color: #ee8838;
+    color: #ffff;
+    outline: none;
+    font: 500 16px 'Poppins';
+    margin-bottom: 0;
+  }
+  .pet-dog-training .cloud_img-1{
+    display: none;
+  }
+
+.pet-trn-pyp-service {
+    margin-top: 30px;
+}
+.pet-trn-puppy.mr-b .slick-list {
+    padding: 0px !important;
+}
+.pet-trn-puppy.mr-b .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #ee8838 !important;
+}
+.pet-trn-puppy.mr-b .slick-dots li button:before{
+  font-size: 8px;
+}
+.pet-trn-puppy.mr-b .slick-dots {
+  bottom: -40px;
+}
+
+
+
+.pet-tyn-pyp-add-extra .pet-pyp-trn-select button{
+  background-color: #ccc;
+  color: #4a4406;
+}
+.pet-tyn-add-extra .pet-trn-select button.active,
+.pet-tyn-pyp-add-extra .pet-pyp-trn-select button.active {
+  background-color: #ee8838;
+  color: #fff;
+}
+
+  @media (max-width:413px){
+    body{
+      width:100%;
+    }
+      .pet-trn-pyp-sin-list .pet-tyn-pyp-add-extra h4,
+      .pet-trn-list-boy-item .pet-tyn-add-extra h4{
+        position: relative;
+        font: 400 18px/26px 'Titan one';
+        margin-bottom: 7px;
+      }
+      
+      .pet-train-my-pet h5,
+      .pet-tin-package h5,
+      .pet-train-main .pet-trn-pyp-service h5,
+      .pet-train-main .pet-trn-pyp-time h5{
+        font-size: 15px;
+      }
+      .pet-trn-popular .pet-obd-text-circle h4,
+      .pet-trn-puppy-text .pet-trn-pyt-head h4{
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+      .pet-trn-popular .pet-obd-text-circle h4{
+        top: 55px;
+      }
+      .pet-trn-list-boy-item .pet-trn-list-item ul img,
+      .pet-trn-pyp-sin-list .pet-pyp-list-item ul li img{
+        width:11px;
+        height:7px;
+      }
+      .pet-trn-list-boy-item .pet-trn-list-item ul li,
+      .pet-trn-pyp-sin-list .pet-pyp-list-item ul li{
+        font: 500 13px/24px 'Poppins';
+      }
+      .pet-trn-list-boy-item .pet-trn-boy-item img {
+        width: 130px;
+      }
+      .pet-trn-pyp-sin-list .pet-trn-gril-item img {
+        width: 130px;
+      }
+      .pet-trn-puppy-list .pet-trn-pyp-sin-list {
+        padding: 12px 12px 20px;
+      }
+      .pet-tyn-add-extra .pet-add-extra-list .pet-addex-list-item,
+      .pet-pyp-add-extra-list .pet-pyp-addex-list-item {
+        font-size: 12px;
+        margin: 5px 4px 0px 0px;
+      }
+      .pet-tyn-add-extra .pet-trn-select button,
+      .pet-tyn-pyp-add-extra .pet-pyp-trn-select button,
+      .pet-train-proceed-btn .pet-pyp-btn button {
+        font-size: 14px;
+        padding-left: 14px;
+      }
+      .pet-train-proceed-btn .pet-pyp-btn button{
+        padding-left: 0;
+      }
+      .pet-pyp-prf-time-list .pyp-prf-list-item{
+        padding: 14px 17px;
+      }
+      .pet-tyn-add-extra .pet-trn-select button span, .pet-tyn-pyp-add-extra .pet-pyp-trn-select button span, .package_btn button span {
+        width: 24px;
+        height: 24px;
+        left: 12px;
+        top: 26%;
+      }
+    .pet-trn-list-item {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width:374px){
+    .pet-trn-popular .pet-obd-pop-text {
+      width: 70px;
+      height: 70px;
+    }
+    .pet-trn-popular .pet-obd-pop-text p {
+      font-size: 13px;
+    }
+   .pet-pyp-prf-time-list .pyp-prf-list-item img {
+    margin-right: 12px;
+  }
+  .pet-trn-obedience .pet-trn-session-list {
+    position: relative;
+    padding: 0px 12px 20px 12px;
+    /* min-height: 620px; */
+  }
+  .add_extra {
+    padding: 0 12px;
+  }
+  .pet-trn-pyp-sin-list .pet-pyp-list-item ul{
+    display: block;
+  }
+  .pet-training-head h5 {
+    font-size: 16px !important;
+  }
+  .pet-dog-train-head {
+    height: 70px;
+  }
+  .pet-trn-puppy .pet-trn-puppy-list {
+    margin: 0 3px 0 3px;
+  }
+  .pet-trn-session .pet-session-circle h6 {
+    font: 600 13px/17px 'Poppins';
+  }
+  .pet-trn-session .pet-session-circle h6 strong {
+    font: 400 18px/30px 'Titan one';
+  }
+
+  }

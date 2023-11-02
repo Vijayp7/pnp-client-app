@@ -1,0 +1,329 @@
+/*dog slide css styling started*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      contain: content;
+      height:100%;
+      min-height: 100vh;
+  }
+  
+  /*font-family: 'Titan One', cursive;*/
+  .slide_body {
+    background: #fff;
+    box-shadow: 0px 0 15px #ccc;
+    border-radius: 18px;
+    overflow: hidden;
+   }
+  .parent_slide {
+      background-color: #ff67a0;
+      min-height: 175px;
+      border-radius: 14px 14px 0px 0px;
+      position: relative;
+  }
+  .traning {
+      position: relative;
+  }
+  .traning::after {
+      content: "";
+      position: absolute;
+      background: #ef5790;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 36px;
+  }
+  
+  .traning {
+      /* padding:55px 56px; */
+      text-align: center;
+  }
+  .traning h3 {
+      color: #fff;
+      /* position: absolute; */
+      z-index: 1;
+      left: 0;
+      font:400 22px/24px 'Titan One';
+      padding-top: 54px;
+      position: relative;
+      width: 150px;
+      margin: 0 auto;
+  }
+  .clouds {
+      position: relative;
+  }
+  .clouds_img img {
+      width: 100%;
+  }
+  .clouds_img {
+      margin-top: -75px;
+      overflow: hidden;
+  }
+  .circle {
+      background-color: #ee8838;
+      width: 91px;
+      height: 91px;
+      border-radius: 100%;
+      position: absolute;
+      top: 65%;
+      left: 62%;
+      border: 2px dashed #d27124;
+      outline: 5px solid #f8cdab;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .circle h3 {
+      font: 600 13px/17px 'Poppins';
+      margin: 0;
+      text-align: center;
+  }
+  .circle strong {
+    font: 400 18px/30px 'Titan one';
+  }
+  
+  .traning_skills {
+    display: flex;
+    position: relative;
+    margin: 75px 10px 30px;
+  }
+.traning_steps {
+    flex: 0 0 calc(90%/2);
+    max-width: 100%;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: self-start;
+}
+  .traning_steps1 {
+        margin-bottom:20px;
+        margin-right: 0;
+        /* display: flex; */
+        flex-wrap: wrap;
+  }
+  .traning_steps2 {
+      margin-top: 0;
+      margin-right: 0;
+      flex: 0 0 150px;
+      max-width: 150px;
+  }
+  .traning-step3 {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    width: 160px;
+  }
+  .traning_img {
+    position: relative;
+    top: 14px;
+  }
+  .traning_img:after {
+    content: " ";
+    position: absolute;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAWCAYAAACPHL/WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2N2E1M2MwZS1jNjI2LWFjNDUtOWVmZS0yMDVhZDcyNzM2Y2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDhDQzg1MzVBMjAxMTFFREJFMTlEOTYyOTYyOEZBMTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDhDQzg1MzRBMjAxMTFFREJFMTlEOTYyOTYyOEZBMTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiMzFkODgyMC0zMGRhLTI5NDgtOTU2NC01OTMwNjc3MDk4MjYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo2MWYwNmIyMC00OTE1LWVkNGItYjQ3Ny03MjJmMDgyZmMyODYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4rlcx5AAABjElEQVR42tyXzysEUQDH34xtlYO4bFmShHLg4EA5cKG2XMRVOSuklZKL60YObHJycPA/rHIgHJWDQhwctI6cXMT4vO1tzda2Zt++NW9869PUzLw3fd7vcTzPE7XkNZ8XhtIPMzAJg9Cq7r/DLZzBMdz7C7UlkyWVOBYISZFtmAr4fg7ScFdOyBXhZhFuqpCRSakyy+Uehim0BVmIa5SVZXZhxxahdVgzUE+aIb8R9hwahQuDjfkNY8ylqzB6SH7vwPB3C3XSsK5JoSHIwCU8wxOcwyb0+t6bVkuy6QyoumsbcrSKXDP3YLbCa19wBKtwqPaaeuSEYZfSFkJGtsopJAIWeYROaKyT0Ce0aAkh08HlugqZv8q47hzKWigj0+Nq9M5IcQJamGadHpoX9mZJR2jCYqHuQIuC2rS61L4lj+8NthpVFELE4bKizl4JEYHEfnm+DwsiQinpIXqkXf4zwQMMq40zUokpkbg6lsyp+x/wIiKY4iqX8cnINEFfFIUKQ44eepPnIPEP8iPAAD/Ac8cmBhsJAAAAAElFTkSuQmCC);
+    height: 25px;
+    width: 61px;
+    z-index: 2;
+    right: -32px;
+    top: -235px;
+  }
+  .cloud-2 {
+    position: absolute;
+    top: 58%;
+  }
+  .traning_steps span {
+      padding-left: 10px;
+      font:500 14px/22px 'Poppins';
+  }
+  .traning_steps i.fa-solid.fa-check {
+      padding-left: 4px;
+      color: #ff67a0;
+  }
+  .carring_lists {
+      display: flex;
+      /* align-items: center; */
+      flex-wrap: wrap;
+      margin-top: 0;
+  }
+  .add_extra {
+      margin-top: 0;
+      padding: 0 20px;
+  }
+  .add_extra h3 {
+      color: #ff67a0;
+      font:400 20px/35px 'Titan One';
+      margin: 0 0 10px;
+  }
+  .list {
+    padding: 0 7px;
+    color: #282828;
+    border: 2px solid #ffb3cf;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+    font: 500 13px 'Poppins';
+    line-height: 20px;
+    font: 500 13px/26px 'Poppins';
+    color: #282828;
+    border-radius: 5px;
+    padding: 0px 7px;
+    margin: 0 5px 5px 0px;
+  }
+  .package_btn {
+      text-align: center;
+      padding: 24px;
+  }
+  .package_btn button {
+      background-color: #ee8838;
+      width: 92%;
+      height: 46px;
+      border: none;
+      border-radius: 25px;
+      color: #ffffff;
+      font:500 16px 'Poppins';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+  }
+  .package_btn button span {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    margin-right: 22px;
+  }
+  .package_btn button.active span {
+    display: block;
+  }
+  
+  .cloud-1 {
+      top: 32%;
+      position: absolute;
+      right: 17px;
+  }
+
+
+
+  .package_btn button{
+    background-color: #ccc;
+    color: #4a4406;
+  }
+  .package_btn button.active {
+    background-color: #ee8838;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+  /*dog slide css styling ended*/
+  
+  
+  
+  /*dog slide styles starts*/
+  @media (max-width:413px){
+      body {
+      width: 100%;
+      }
+  
+    .traning h3 {
+        font-size: 20px !important;
+        text-align: center;
+        /* margin: 0; */
+    }
+    .traning::after {
+      left: 0;
+     }
+       .clouds_img {
+      margin-top: -54px !important; 
+      }
+      .pet-trn-pyp-sin-list .pet-trn-pnp-session {
+        position: absolute;
+        top: -15px;
+        height: 95px;
+        width: 95px;
+        right: 4px;
+      }
+      .pet-trn-pyp-sin-list .pet-trn-gril-item::after {
+        width: 54px;
+        top: 72px;
+      }
+     .circle h3 {
+      /* font-size: 14px; */
+     }
+      .add_extra h3 {
+        font: 400 18px/26px 'Titan One';
+        margin: 0 0 7px;
+      }
+     .list, .traning_steps span {
+      padding-left: 6px;
+      font-size: 12px !important;
+     }
+     .carring_lists .list.active {
+        background-color: #ffb3cf;
+        color: #fff;
+    }
+     .traning_skills {
+      position: relative;
+      left: 0;
+      top: 15px;
+      margin: 75px 5px 30px;
+     }
+      .package_btn button {
+          font-size: 14px !important;
+      }
+      .cloud-1 {
+      top: 38%;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+        top: 75%;
+        left: 55%;
+      }
+      .circle strong {
+        font: 400 16px/30px 'Titan one';
+      }
+      .circle h3 {
+        font: 600 12px/17px 'Poppins';
+      }
+      .traning-step3 {
+        top: 22px;
+        bottom: inherit;
+        width: 110px;
+      }
+      .package_btn button span {
+        width: 30px;
+        height: 30px;
+        left: 14px;
+        top: 8.5px;
+    }
+    .add_extra {
+        padding: 0px 12px;
+    }
+    .cloud-2 {
+        top: 54%;
+    }
+    .package_btn {
+        padding: 12px;
+    }
+    .package_btn button {
+        font-size: 13px !important;
+        padding-left: 20px;
+    }
+  }
+   /*dog slide styles ends*/

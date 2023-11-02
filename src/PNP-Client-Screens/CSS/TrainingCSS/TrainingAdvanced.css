@@ -1,0 +1,294 @@
+
+/*dog traning slide css styling started*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      contain: content;
+      height:100%;
+      min-height: 100vh;
+  }
+  div.traning_body {
+    /* margin: 30px 0px; */
+    background: #fff;
+    /* box-shadow: 0px 0 15px #ccc; */
+    border-radius: 18px;
+    margin: 0 0 0 0px;
+    border: 1px solid #cccc;
+}
+  .traning_slide {
+      background-color: #5fc2ed;
+      min-height: 175px;
+      border-radius: 18px 18px 0px 1px;
+      position: relative;
+  }
+  .traning_text {
+      /* position: absolute; */
+      /* padding:55px 56px; */
+      text-align: center;
+  }
+  .traning_text:after {
+      content: "";
+      position: absolute;
+      background: #55b9e5;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 36px;
+  }
+  .traning_text h3 {
+      color: #fff;
+      /* position: absolute; */
+      z-index: 1;
+      left: 0;
+      letter-spacing: 1px;
+      font:400 22px/30px 'Titan One';
+      width: 120px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 54px;
+  }
+  .clouds_places{
+      position: relative;
+      
+  }
+  .clouds_imgs img {
+      width: 100%;
+  }
+  .clouds_imgs {
+      margin-top: -75px;
+      overflow: hidden;
+  }
+  .circle_img {
+      background-color: #ee8838;
+      width: 91px;
+      height: 91px;
+      border-radius: 100%;
+      position: absolute;
+      top: 65%;
+      left: 64%;
+      border: 2px dashed #d27124;
+      outline: 5px solid #f8cdab;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .circle_img h3 {
+    font: 600 12px/17px 'Poppins';
+      text-align: center;
+      margin: 0;
+  }
+  .circle_img strong {
+    font: 400 18px/30px 'Titan one';
+  }
+  .cloud_img-1 {
+      top: 33%;
+      position: absolute;
+      right: 20px;
+  }
+  .traning_tips {
+      display: flex;
+      position: relative;
+      /* top: 28px;
+      left: 5px; */
+      padding: 0 12px;
+      margin-top: 75px;
+  }
+  .traning_tip1 {
+    margin-top: 0;
+    margin-right: -16px;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .traning_list {
+    flex: 0 0 49%;
+    max-width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+  .traning_tip2{
+      margin-top: 0;
+      margin-right: 0;
+      flex: 0 0 150px;
+      max-width: 150px;
+  }
+  .traning_list span {
+      padding-left: 10px;
+      font:500 14px/22px 'Poppins';
+  }
+  .traning-tip3 {
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+  }
+  .traning_images img {
+      width: 120px;
+  }
+  .traning_list i.fa-solid.fa-check {
+      padding-left: 3px;
+      color: #5fc2ed;
+  }
+  .traning_lists{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 0;
+  }
+  .extra_add {
+      margin-top: 0;
+      padding: 0 20px;
+  }
+  .extra_add h3 {
+      color: #5fc2ed;
+      font: 400 20px'Titan One';
+      margin: 0 0 10px;
+  }
+  .list_train {
+    padding: 0 7px;
+    color: #282828;
+    border: 2px solid #5fc2ed;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+    font: 500 13px 'Poppins';
+    line-height: 32px;
+  }
+  .package_btn {
+      text-align: center;
+      padding: 30px 30px;
+  }
+  .package_btn button {
+      background-color: #ee8838;
+      width: 180px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      color: #ffffff;
+      font:500 16px 'Poppins';
+  }
+  .select_packages {
+      text-align: center;
+      padding: 24px;
+  }
+  .select_packages button {
+      background-color: #ee8838;
+      width: 92%;
+      height: 46px;
+      border: none;
+      border-radius: 25px;
+      color: #ffffff;
+      font:500 16px 'Poppins';
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  .select_packages button span {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    margin-right: 22px;
+  }
+  .select_packages button.active span {
+    display: block;
+  }
+  .cloud-img-2 {
+      margin-top: 16px;
+  }
+ .select_packages button{
+    background-color: #ccc;
+    color: #4a4406;
+  }
+ .select_packages button.active {
+    background-color: #ee8838;
+    color: #fff;
+  }
+  /*dog traning slide css styling ended*/
+  
+  
+  /*dog traning slide css styling starts*/
+  @media (max-width:413px){
+      body {
+      width: 100%;
+      }
+  
+     .traning_text h3 {
+      font-size: 20px !important;
+      /* margin-left: -21px; */
+     }
+     .traning_text:after {
+      left: 0;
+      }
+    .clouds_imgs img {
+      margin-top: 6px;
+     }
+      .clouds_imgs {
+      margin-top: -58px;
+      }
+     .circle_img {
+      width: 85px;
+      height: 85px;
+      top: 67%;
+      left: 55%;
+     }
+     .traning_images img {
+      width: 110px;
+     }
+     .traning-tip3 {
+        bottom: 0%;
+    }
+      .circle_img h3 {
+      /* font-size: 14px !important; */
+      }
+      .traning_list span {
+          font-size: 13px;
+      }
+      .extra_add h3 {
+          font-size: 18px;
+      }
+      .list_train,.traning_list span {
+          font-size: 12px;
+      }
+      .select_packages button {
+          font-size: 16px;
+      }
+      .circle_img strong {
+        font: 400 16px/30px 'Titan one';
+      }
+      .traning_images img {
+        width: 90px;
+      }
+      .traning_list {
+        margin-bottom: 5px;
+      }
+      .extra_add {
+        padding: 0 12px;
+      }
+      .select_packages button {
+        font-size: 13px;
+        padding-left: 20px;
+      }
+      .select_packages button span{
+        width: 30px;
+        height: 30px;
+        left: 14px;
+        top: 8.5px;
+      }
+      .select_packages {
+        padding: 20px 12px;
+      }
+  }
+   /*dog traning slide css styling ends*/

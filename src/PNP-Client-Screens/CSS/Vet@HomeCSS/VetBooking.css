@@ -1,0 +1,419 @@
+/*vet-booking page*/
+
+.vb-head h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: #2b3440;
+  }
+  .back-btn{
+    padding-left: 20px;
+  }
+  .vb-head .back-btn .fa-less-than{
+    color: #2b3440;
+  }
+  .dmn-headtag{
+    height: 70px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1111111;
+    width: 100%;
+  }
+  .vb-wst-checks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .vb-wst-checks > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .plan-content {
+    display: flex;
+    align-items: center;
+    padding: 30px 5px 15px;
+  } 
+  label.plan {
+    border-radius: 12px;
+    border: none;
+    background: #fff3e0;
+    display: block;
+    position: relative;
+    /* width: 178px; */
+    margin: 0 9px 18px;
+  }
+  label.plan input{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  label.plan input:checked ~ .checkmark {
+    background-color: #ee8838;
+  }
+  label.plan .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ee8838;
+    border-radius: 50%;
+    background: #fff;
+  }
+  label.plan .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  label.plan input:checked ~ .checkmark:after {
+    display: block;
+  }
+  label.plan .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .plan-details {
+    padding-left: 10px;
+  }
+  .plan-details p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #343434;
+  }
+  .vb-appointment{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 -10px 30px;
+     */
+     margin: 0;
+  }
+  
+  .vb-appointment > div,
+  .vb-appointment1 > div{
+    /* flex: 0 0 calc(100%/2 - 20px); */
+    /* max-width: 100%; */
+    margin: 0 0px;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .vb-appointment > div label,
+  .vb-appointment1 > div label{
+    border-radius: 12px;
+    background: #fff3e0;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    height: 50px;
+    position: relative;
+    
+  }
+  .vb-appointment > div label input,
+  .vb-appointment1 > div label input{
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    background-color: transparent !important;
+    width: 100%;
+  }
+  .vb-appointment > div .v-date input,
+  .vb-appointment1 > div .v-date input{
+    background-color: #fff3e0;
+    /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2N2E1M2MwZS1jNjI2LWFjNDUtOWVmZS0yMDVhZDcyNzM2Y2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjhCOTAzMjM5QkFEMTFFREFFNjI4NDYxNDY4RDk5RUUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjhCOTAzMjI5QkFEMTFFREFFNjI4NDYxNDY4RDk5RUUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQTk3MTQyNDFBOUJFRDExQkRFRkM1NTYwNzY1Qzk1RSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM3ZTM2OTllLTBkZGMtYWU0Yy1iNGVjLWE4MzJmNmQ0OWM3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqyzwioAAAQDSURBVHjapFXPa1xVFP7Oe3fezLyZTKaTdvJDE0upaSq0TQmlaqnYlShoEUF3xVIExYW6EBdml40LNyLFhRWKCxFxK/4JWkURJHFjLQWdJjYhmZk3v96v63dvZpKJjUXohTfvnXvP/e653/nOGVlaWioAED7O9RUsHq96b6iC981CPngd9x/6q5v46PBo9iUpeJ+dyTff51xq5hV/zOMYYClKtZmgyKmHaHv3AzQ/66lMTXJXT9yJPk5igNWlu/X5iWb3TQnb+aBVOHH16BzeDpuz767duQZHSeo4fYjd4SpHY2NDbseVk19PPorFzuaTb9Vq15EvRJvt+idq6nbtc3d8YkZaDURRisAvQYftajbRz0McpIm+J0xH86BehFhrbBXo36xPqxTTSDUqifuUQpyU4Qq0o3Chu4X1P5Zx3otITAb3hDi4u9hw8Wx9A/L7Ms6qHnSG/lEE8f28xBdeqLkT45N2f2OLEfSAvA+MjpKhZH9GDSVRDAQNIAwBn7kulay/FllV8UTVScYOkGYFmarajKVJCv1fgEPAoib3+gtvrAlbu3VrTeVyVbowWI0HHlrfVbpSSf2RIml1rMgeAM3KPeVQ0moJXJeJMtLhgu5Di/R90+3aMLZZN5vFGUTV93V2sdPUCtbuTnM5qNqv8L7/kEloIz71qn2rlS+hy0cQz16EuvktZOM3xHMvQ+cOIPPLNeYii/DMO4hmFuB0OhZX7ZzASCQMIKs/MaMNyNHnaDchf92ARB3IzHk46ytA7Qc4D59jQDHkzg0i+JBeffdmw6DC7KX+QSTHX6E0ukgqs5C4C5y4BF2cQjoyg/jIM5CxOSTjpyGaknrkaRsp8lRPupNkUcNc6EyRG+b5TfHzADCaZHIByJZJTxlSOUZNHmJXKKJz6DSa1SesZjLKhdvr7mhnB9RUhNv8E953H5DLAPHj7/HaAdwfPwYOPobw1GV4y18Aqz8Dxy6iXj2LVjdgyaYo+Q5lbjX6L05N3JoCjts2QSZKJBHtlqXDXtfQYe0QQlE4Mbk26rDNLrMPp6zbpDSN6Nzi9rWrJ7kxQpofY6Z5fXKs51+DdF5kCR+GJyHcQsFKTLEaB1FarFqttlYqlaqKOu1pFwHbqFn22Ro1GeuwEHkzZHWEnmTYmYCcy7g6m+iGbCDMes7IsQ9M7f+thmtZdzuI66tmAZoNwryjICBCBp7PY6jDiA0kWywipn+73eY2h8sZ++zPKU8dnGicjW2czZyxB2suK3CwZt4ypFH7d8IJd1tRqd00alpe/wAzPM/b+R5EM2wPfM3+QZ4UnUZMFLssOP2y1nui2M8e9h26bVk1Go2r2Wz2CslWfaLl//YlAui9XU/H5PnTfwQYAPs+v24th+WyAAAAAElFTkSuQmCC); */
+    background-repeat: no-repeat;
+    background-image: url(../../../../public/calendar.png);
+    background-position: right 7px center;
+    background-size: 22px;
+    height: 50px;
+    width: 100%;
+    padding: 0 7px;
+    background-color: transparent !important;
+    font: 500 14px 'Poppins';
+    color: #707070;
+    appearance: none;
+  }
+  .vb-appointment > div .v-time input,
+  .vb-appointment1 > div .v-time input{
+    background-color: #fff3e0;
+    background-image: url(../../../../public/clock-up.png);
+    /* background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2N2E1M2MwZS1jNjI2LWFjNDUtOWVmZS0yMDVhZDcyNzM2Y2IiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0UzNjg4MEM5QkFEMTFFREE3MEVBN0ExNzA1MzY3NDciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0UzNjg4MEI5QkFEMTFFREE3MEVBN0ExNzA1MzY3NDciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQTk3MTQyNDFBOUJFRDExQkRFRkM1NTYwNzY1Qzk1RSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM3ZTM2OTllLTBkZGMtYWU0Yy1iNGVjLWE4MzJmNmQ0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); */
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 24px;
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    background-color: transparent !important;
+    position: absolute;
+    font: 500 14px 'Poppins';
+    color: #707070;
+    appearance: none;
+  }
+  .vb-appointment > div .v-date input[type="date"]::-webkit-calendar-picker-indicator,
+  .vb-appointment1 > div .v-date input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity:0;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    top: 30%;
+  }
+  .vb-appointment > div .v-time input[type="time"]::-webkit-calendar-picker-indicator,
+  .vb-appointment1 > div .v-time input[type="time"]::-webkit-calendar-picker-indicator{
+    opacity:0;
+    -webkit-appearance: none;
+    width:24px;
+    height:24px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    top: 30%;
+  }
+  
+  .vb-appointment1{
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 0 -10px 30px;
+  }
+  
+  .vb-appointment1 > div{
+    flex: 0 0 calc(100%/2 - 20px);
+    max-width: 100%;
+    margin: 0 10px;
+  }
+  .vb-disc-sec textarea, .vbi-cmnt-sec textarea{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    resize: none;
+    border-radius: 12px;
+    width: 100%;
+    border: none;
+    background: #fff3e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  .vb-disc-sec button, .vbi-quote-btn button, .Sitting-booking-btn button {
+    width: 100%;
+    height: 54px;
+    border-radius: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #ee8838;
+    letter-spacing: 1px;
+  }
+  .vet-booking-page .my-pet-details > div.active{
+    border: 3px solid #f6bd8c;
+    position: relative;
+  }
+  .vet-booking-page .my-pet-details > div.active::after{
+    content: "";
+    position: absolute;
+    background: url(../../../../public/active-tick.png)no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: -8px;
+    right: -12px;
+  } 
+
+  .srvc-on-off, .avl-dys-list, .avl-tm-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+.srvc-on, .avl-dys-item, .avl-tm-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff3e0;
+  border: 2px solid #ededed;
+  border-radius: 10px;
+  padding: 0 20px;
+  min-height: 54px;
+  position: relative;
+  /* flex: 0 0 170px; */
+  /* max-width: 170px; */
+  margin-bottom: 7px;
+  flex: 0 0 48%;
+  max-width: 48%;
+  
+}
+.srvc-on{
+  /* margin-right: 14px; */
+}
+.vb-appointment h6,.vb-disc-sec h6{
+  margin-bottom: 10px;
+}
+.srvc-on-img, .avl-dys-cldr {
+  margin-right: 18px;
+  flex: 0 0 40px;
+  max-width: 40px;
+  height: 40px;
+}
+.srvc-on p, .avl-dys-item p, .avl-tm-item p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #515151;
+}
+.srvc-on .chk-item, .avl-tm-item .chk-item {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+.srvc-on .chk-item input, .avl-tm-item .chk-item input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.srvc-on .chk-item label, .avl-tm-item .chk-item label {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  color: #656668;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.srvc-on .chk-item label:before, .avl-tm-item .chk-item label:before {
+  content: '';
+  background-color: #fff3e0;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  /* margin-right: 15px; */
+  border-radius: 50%;
+}
+.srvc-on .chk-item input:checked + label:after, .avl-tm-item .chk-item input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 3px;
+  height: 7px;
+  border: solid #ff9800;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.srvc-on.active, .avl-dys-item.active, .avl-tm-item.active {
+  /* background-color: #9dce76; */
+  border: 2px solid #ff9800;
+}
+.srvc-on.active p, .avl-dys-item.active p, .avl-tm-item.active p {
+  /* color: #9dce76; */
+}
+.vet-booking-page h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #414349;
+  /* margin-bottom: 10px; */
+}
+  @media (max-width: 413px){
+    label.plan {
+        /* width: 140px; */
+        margin: 0 4px 12px;
+    }
+    .srvc-on-off, .avl-dys-list, .avl-tm-list {
+      margin-bottom: 16px;
+    }
+    .srvc-on, .avl-dys-item, .avl-tm-item {
+      border-radius: 7px;
+      padding: 0 12px;
+      min-height: 54px;
+      /* flex: 0 0 130px; */
+      /* max-width: 130px; */
+   }
+   .srvc-on-img, .avl-dys-cldr {
+    margin-right: 12px;
+    flex: 0 0 30px;
+    max-width: 30px;
+    height: 30px;
+  }
+  .srvc-on p, .avl-dys-item p, .avl-tm-item p {
+    font-size: 14px;
+ }
+ .srvc-on .chk-item label:before, .avl-tm-item .chk-item label:before {
+  padding: 7px;
+}
+.srvc-on .chk-item input:checked + label:after, .avl-tm-item .chk-item input:checked + label:after {
+  top: 3px;
+  left: 6px;
+  width: 3px;
+  height: 7px;
+}
+.vet-booking-page h5 {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.main-sec {
+  padding: 24px 14px 30px;
+}
+.m-b {
+  margin-bottom: 14px;
+}
+
+
+}
+@media(max-width:374px){
+  .dmn-headtag {
+    height: 65px;
+  }
+  .vb-wst-checks > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .plan-details p {
+    font-size: 14px;
+  }
+  .vb-disc-sec textarea, .vbi-cmnt-sec textarea {
+    margin-bottom: 45px;
+  }
+  .plan-content {
+    padding: 25px 5px 15px;
+  }
+  .plan-content img {
+    width: 30px;
+  }
+  .plan-details p {
+    font-size: 13px;
+  }
+  .vb-appointment > div .v-date input, .vb-appointment1 > div .v-date input {
+    font: 500 12px 'Poppins';
+  }
+  .vb-appointment h6, .vb-disc-sec h6 {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}

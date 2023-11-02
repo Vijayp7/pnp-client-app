@@ -1,0 +1,176 @@
+/*vet-booking-info*/
+.back-btn .fa-xmark{
+    font-size: 22px;
+    color: #000;
+  }
+  .header_section3 {
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    background: #fff;
+    z-index: 1;
+  }
+  .vbi-head{
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 24px 0;
+    z-index: 1;
+  }
+  .vet-booking-info-page .main-sec,
+  .sbi-page .main-sec{
+    padding-top: 10px;
+  }
+  .bk-dtl.m-b {
+    margin-bottom: 0;
+  }
+  .bk-dtl h6{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .vbi-inf{
+    background: #fff3e0;
+    border-radius: 18px;
+    padding: 20px 20px 30px;
+    margin-bottom: 65px;
+  }
+  .vbi-inf .workshop-sec{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+  }
+  .vbi-pet-info, .vbi-pet-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .vbi-pet-info {
+    border-bottom: 1px dashed #dbbc8a;
+    padding-bottom: 15px;
+  }
+  .vbi-cmnt-sec h6 {
+    margin-bottom: 12px;
+  }
+  .vbi-pet-name > div {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vbi-pet-name > div img{
+    /* width: 26px; */
+  }
+  .vbi-pet-name span{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #7e7d7d;
+  }
+  .vbi-pet-info strong{
+    font: 500 15px 'Poppins';
+    color: #7e7d7d;
+  }
+  .vbi-pet-info-1{
+    flex-direction: column;
+    align-items: start;
+  }
+  .vbi-pet-info-1 .vbi-pet-name{
+    margin-bottom: 15px;
+  }
+  .vbi-pet-info p {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #343434;
+    font-weight: 600;
+    position: relative;
+  }
+  .vbi-pet-info p .fa-check {
+    color: #ee8838;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .vbi-cmnt-sec p{
+    padding: 25px;
+    min-height: 150px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #343434;
+    background: #f1e2c9;
+    border-radius: 18px; 
+    word-wrap: break-word; 
+  }
+  .workshop-sec {
+    margin-bottom: 40px;
+  }
+  #wfl-categories .slick-prev, #wfl-categories .slick-next{
+    display: none !important;
+  }
+  #partners-sec .slick-prev, #partners-sec .slick-next{
+    display: none !important;
+  }
+  #pcg-sec-cont .slick-prev, #pcg-sec-cont .slick-next{
+    display: none !important;
+  }
+  #workshops .slick-prev, #workshops .slick-next{
+    display: none !important;
+  }
+  #pet-stories .slick-prev, #pet-stories .slick-next{
+    display: none !important;
+  }
+  .symbol_text h4 {
+    font: 600 18px 'Poppins';
+}
+.symbol_text {
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.vet-booking-info-page .main-sec{
+  padding: 0;
+}
+.logo_symbol {
+  position: absolute;
+  left: 20px;
+  top: 42%;
+}
+  
+@media (max-width: 413px){
+
+  .vbi-inf .workshop-sec {
+    margin-bottom: 12px;
+  }
+  .vbi-inf {
+    padding: 20px 16px 30px;
+  }
+  .vbi-cmnt-sec p {
+    padding: 20px;
+  }
+  .symbol_text h4 {
+    font: 600 18px 'Poppins';
+  }
+  .logo_symbol {
+    top: 39%;
+  }
+  .vbi-pet-name span {
+    font-size: 16px;
+  }
+  .vbi-pet-info p {
+    font-size: 14px;
+  }
+  .vbi-pet-name span {
+    font-size: 15px;
+  }
+
+}

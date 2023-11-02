@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      contain: content;
+      height:100%;
+      min-height: 100vh;
+  }
+  
+  /*dog traning css styling started*/
+  
+  
+  
+  .body_section {
+      /* margin-top: 43px; */
+      /* padding: 0 20px 20px; */
+  }
+  .symbol_text{
+      text-align: center;
+  }
+  .symbol_text h4{
+     font:600 20px 'Poppins';
+  }
+  
+  .body_page{
+    padding: 14px 14px 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    margin: 20px 20px;
+  }
+  .design_inside{
+      /* border-bottom: 2px dashed #ece5db; */
+      /* padding-bottom: 15px; */
+  }
+  .design_inside .pet_parent{
+    display: flex;
+    justify-content: right;
+  }
+  .change_txt span{
+      color: #ee8838;
+      font:500 15px 'Poppins';
+  }
+  .pet_text h4 {
+      color: #7e7d7d;
+  }
+  .p-t {
+      padding-top: 0;
+  }
+  .pet_imgs{
+      display: flex;
+      align-items: center;
+  }
+  .pets_inform{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .zoro_txt span{
+    font: 500 15px 'Poppins';
+    color: #7e7d7d;
+  }
+  .pack_image{
+      display: flex;
+      align-items: center;
+      padding-top: 22px
+  }
+  .pet_text h4 {
+      padding-left: 20px;
+      font:600 18px 'Poppins';
+      text-align: left;
+  }
+  .pack_txt h4 {
+      color: #7e7d7d;
+      margin-left: 10px;
+  }
+  .info_basic {
+      display: flex;
+      align-items: center;
+  }
+  .parent_basic {
+      padding-top: 0;
+  }
+  .basic_txt h4 {
+    padding-left: 5px;
+    font: 500 14px 'Poppins';
+    color: #2b3440;
+    margin-bottom: 5px;
+  }
+  .info_basic i.fa-solid.fa-check {
+      padding-left: 14px;
+      color: #3cd1a2;
+  }
+  
+  .add_on h4,.note h4 {
+    padding-left: 5px;
+    font: 500 14px 'Poppins';
+    color: #2b3440;
+    margin-bottom: 5px;
+  }
+  .three_tickets.p-t {
+    padding-top: 0;
+  }
+  
+  .info_clean {
+      display: flex;
+      align-items: center;
+      margin: 0 0 10px 0;
+  }
+  .info_clean:last-child{
+    margin-bottom: 0;
+  }
+  .info_clean i.fa-solid.fa-check {
+    color: orange;
+    margin-right: 10px;
+}
+  .clean_txt h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #343434;
+  }
+  
+  .tickes {
+    padding: 20px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+  }
+  .two_tickes {
+      /* border-bottom: 2px dashed #ece5db; */
+      margin-bottom: 14px;
+  }
+  
+  .date_parent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  .section_date {
+      border-bottom: 2px dashed #ece5db;
+      margin-top: 20px;
+  }
+  .date_img {
+      display: flex;
+      align-items: center;
+  }
+  .date_txt h4 {
+    font-size: 17px;
+    color: #888787;
+    margin-left: 10px;
+  }
+  .info_date span {
+      color: #393939;
+      font:500 14px 'Poppins';
+  }
+  .info_date {
+      background-color: #fff;
+      min-width: 100px;
+      height: 30px;
+      border-radius: 26px;
+      text-align: center;
+      padding-top: 4px;
+  }
+  
+  .time_parent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  .section_time {
+      border-bottom: 2px dashed #ece5db;
+      margin-top: 20px;
+  }
+  .time_img {
+      display: flex;
+      align-items: center;
+  }
+  
+  .additional_txt {
+      padding-top: 0;
+  }
+  .notes_txt h4 {
+    padding-left: 5px;
+    font: 500 14px 'Poppins';
+    color: #2b3440;
+    margin-bottom: 5px;
+  }
+  
+  .eg_txt {
+      margin-top: 20px;
+  }
+  .eg_txt textarea {
+      border: none;
+      width: 326px;
+      height: 176px;
+      border-radius: 16px;
+      padding: 15px;
+      color:#787878;
+      font: 500 15px 'Poppins';
+  }
+  
+  .button_txt{
+      /* padding-top: 50px; */
+      text-align: center;
+  }
+  .button_txt button {
+    width: 84%;
+    background-color: #ee8838;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font: 500 16px 'Poppins';
+    margin: 0 auto 20px;
+  }
+  .additional_txt textarea {
+    border: none;
+    width: 100%;
+    height: 176px;
+    border-radius: 16px;
+    padding: 15px;
+    color: #787878;
+    font: 500 14px 'Poppins';
+    resize: none;
+    outline: none;
+  }
+  .additional_txt textarea::placeholder{
+    color: #afb1b3;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  
+  /*dog traning css styling ended*/
+  
+  
+   /*dog traning styles starts*/
+   @media (max-width:413px){
+      body {
+      width: 100%;
+      }
+    .symbol_text h4 {
+      font-size: 18px !important;
+      }
+    .button_txt button {
+      width: 88% !important;
+     }
+     .pet_text h4 {
+      font-size: 16px;
+     }
+     .pack_txt h4 {
+      font-size: 16px;
+     }
+     .basic_txt h4 {
+      font-size: 14px;
+     } 
+     .clean_txt h4 {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .eg_txt textarea {
+      width: 247px;
+     }
+     .body_page {
+        padding: 25px 14px;
+     }
+     .two_tickes.p-t {
+        padding-top: 14px;
+    }
+    .body_section {
+        /* padding: 0 16px 20px; */
+    }
+    .additional_txt textarea {
+        min-height: 180px;
+    }
+    .date_txt h4 {
+        font-size: 15px;
+    }
+   }
+    /*dog traning styles ends*/
